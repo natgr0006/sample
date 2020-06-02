@@ -1,0 +1,254 @@
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.redbr {
+  border: 2px solid #ff0000;
+}
+
+.redcol {
+  color: #ff0000;
+}
+
+body {
+  background: url(../image/map.JPG);
+  height: 100vh;
+  background-size: cover;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border-radius: 1px solid #ebebeb;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+
+.header__logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+.header__logo span {
+  font-weight: 600;
+}
+
+.active {
+  color: #000000;
+}
+
+.enter {
+  padding: 7px 20px;
+  border: 1px solid #808080;
+  padding-left: 30px;
+  position: relative;
+}
+.enter::before {
+  content: "";
+  background: url("../image/enter.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+
+.taxi-form {
+  background: #ffffff;
+  width: 45%;
+  margin-top: 20px;
+  padding: 30px;
+  border: 1px solid #cccccc;
+}
+
+.from, .where {
+  width: 49%;
+}
+
+.form__col {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.change {
+  background: #ffffff;
+  background-image: url("../image/swap_arrow.png");
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  outline: none;
+  border: none;
+  border: 1px solid #808080;
+}
+
+.three {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.adition {
+  display: flex;
+  margin: 0;
+}
+
+.li_addition {
+  display: inline-block;
+  margin-right: 20px;
+  color: #808080;
+  font-size: 14px;
+}
+.li_addition:hover {
+  color: #fc0d1b;
+}
+
+.four {
+  padding-top: 20px;
+}
+
+.header_li {
+  padding-right: 15px;
+  color: #aaaaaa;
+}
+.header_li:hover {
+  color: #fc0d1b;
+}
+
+input:hover {
+  border: 2px solid #feda5a;
+}
+
+.ok {
+  background: #feda5a;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 15%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .taxi-form {
+    width: 60%;
+  }
+}
+@media (max-width: 830px) {
+  .taxi-form {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .taxi-form {
+    width: 100%;
+  }
+
+  .header__menu {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .header {
+    height: 180px;
+  }
+
+  .enter {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .one {
+    display: block;
+  }
+
+  .from, .where {
+    width: 100%;
+  }
+
+  .change {
+    display: block;
+    margin: 15px auto;
+    width: 50px;
+    height: 50px;
+  }
+
+  .two {
+    display: block;
+    text-align: center;
+  }
+
+  .tel {
+    width: 100%;
+  }
+
+  .four {
+    flex-direction: column;
+  }
+
+  .ok {
+    text-align: center;
+  }
+}
